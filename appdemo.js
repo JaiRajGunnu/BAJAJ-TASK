@@ -53,7 +53,7 @@ app.post('/bfhl', (req, res) => {
 
 app.get('/bfhl', (req, res) => {
   // For GET request, return a hardcoded operation_code
-  res.status(200).json({ operation_code: 1 });
+//   res.status(200).json({ operation_code: 1 });
 
   res.send('Hello')
 });
