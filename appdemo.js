@@ -22,6 +22,11 @@ app.post('/bfhl', (req, res) => {
       alphabets,
     } = req.body;
 
+    // Ensure that the required fields are present in the request
+    if (!full_name || !dob || !college_email || !college_roll_number || !numbers || !alphabets) {
+      throw new Error('Missing required fields in the request.');
+    }
+
     // Calculate the highest alphabet in the input array of alphabets
     const highestAlphabet = alphabets.reduce((max, current) =>
       current > max ? current : max
