@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();
-const port = process.env.PORT || 8000; // You can change the port as needed
+const port = process.env.PORT || 3000; // You can change the port as needed
 
 app.use(bodyParser.json());
 
@@ -53,9 +53,8 @@ app.post('/bfhl', (req, res) => {
 
 app.get('/bfhl', (req, res) => {
   // For GET request, return a hardcoded operation_code
-//   res.status(200).json({ operation_code: 1 });
+  res.status(200).json({ operation_code: 1 });
 
-  res.send('Hello')
 });
 
 app.listen(port, () => {

@@ -1,0 +1,9 @@
+{
+    "full_name": "John Doe",
+    "dob": "17091999",
+    "college_email": "john.doe@example.com",
+    "college_roll_number": "12345",
+    "numbers": [1, 2, 3],
+    "alphabets": ["a", "b", "c"]
+  }
+  
